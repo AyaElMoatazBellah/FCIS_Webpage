@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>faculty of computer sience</title>
+<link rel="StyleSheet" type="text/CSS" href="department.css" /> 
+<style type="text/css">
+p.navy{
+color:navy;
+text-align:left;
+}
+p.underline{
+color:lightblue;
+text-transform:capitalize;
+text-decoration:underline;
+text-align:center;
+}
+p.normal{
+color:gray;
+font-size:40px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+   <div class="fcislogo">
+      <img src="logo.PNG"  id="logo" ></img>
+    </div>
+
+    <table class="Students" style="margin-right:10%;" >
+      <tr>   
+	    <td>
+           <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background:#000033; font-size:100%; border-color:#000033;">
+             <option selected disabled>Students</option>
+             <option value="undergraduated.html"> Undergraduate Study </option>
+             <option value="postgraduated.html">Postgraduate Study </option>
+             <option value="international.html">International Students </option>
+        
+            </select>
+		</td>
+      </tr>
+
+      <tr>
+	     <td>
+            <select  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background:#000033; font-size:100%;border-color:#000033;">
+             <option selected disabled>Staff</option>
+             <option value="http://staff.asu.edu.eg/search.php" >Staff Directory</option>
+         
+            </select>
+			</td>
+      </tr>
+    </table>
+
+
+<div class="bar">
+        <table id="table1" >
+           <tr style="font-size:100%; text-align:auto;">
+	
+               <td> <a href="home.html" style=" text-decoration: none; color:white;">Home</a> </td>
+  
+               <td>  <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background-color:#4682b4; font-weight: bold; border-color:#4682b4;">
+                   <option selected disabled>About Us</option>
+                   <option value="dean.html"> Dean Word  </option>
+                   <option value="mission.html"> Mission   </option>
+                   <option value="vission.html"> Vission   </option>
+                   <option value="history.html"> History   </option>    </select>
+  
+                </td> 
+  
+                <td> <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" style="color:white; background-color:#4682b4;font-weight: bold; border-color:#4682b4;">
+                    <option selected disabled>Department</option>
+                    <option value="cs.html"> Computer Science Department  </option>
+                    <option value="is.html"> Information System   </option>
+                    <option value="sc.html"> Scientific Computing    </option>
+                    <option value="csy.html"> Computer Systems Department   </option>
+                    <option value="bs.html" > Basic Science Department   </option>   </select>
+                </td>  
+  
+                <td> <a href="result.html" style=" text-decoration: none; color:white;">Result </a></td>
+				
+                <td> <a href="contact.html" style=" text-decoration: none; color:white;">Contact Us </a></td>
+				
+                <td> <select  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style=";color:white; background-color:#4682b4; font-weight: bold;border-color:#4682b4;">
+                    
+					<option selected disabled >EGY Faculties</option>
+                    <option value="http://www.aun.edu.eg/faculty_computer_information/">Faculty of Computer Science - Assiut University  </option>
+                    <option value="http://www.fayoum.edu.eg/customerror.aspx?aspxerrorpath=/english/ComputersInformation/home.aspx"> Faculty of Computer Science - Fayoum University  </option>
+                    <option value="http://www.fci.bu.edu.eg/fci/en/"> Faculty of Computer Science- Benha University   </option>
+                    <option value="http://www.helwan.edu.eg/fcih/index.php/en/"> Faculty of Computer Science - Helwan University  </option>
+                    <option value="http://csifac.mans.edu.eg/en"> Faculty of Computer Science -Mansoura University </option>
+                    <option value="http://ci.scuegypt.edu.eg/"> Faculty of Computer Science -Suez Canal University  </option>
+                    <option value="http://www.fci.zu.edu.eg/"> Faculty of Computer Science -Zagazig University    </option>
+                    <option value="http://www.minia.edu.eg/FCIEnglish"> Faculty of Computer Science -Minia University   </option>     </select>
+  
+                </td>
+           </tr>
+		</table>
+ </div>
+ </div>
+ 
+ <div id="bs">
+                <p class="normal">The Department Of Basic Sciences</p>
+                <p class="underline">The Department Of Basic Sciences</p>
+                <p class="navy">Vision</p>
+                <p>The Department Of Basic Sciences,Faculty of systems  Science and information computer -fcis.</p>
+                <p class="navy">Mission</p>
+                <p>The Department of Basic Sciences,Ain Shams University-seeks to apply the Basice Science Academic program and achieve the Intendend Learning Outcomes through Alignment with the educational probabilities,academic researsh policy and distinguished performance of faculty.</p>
+                <p class="navy">Objectives</p>
+                <p>prioritizing the teaching of basic concepts of general courses.
+                   the enrichment and solidification of student academic background in mathematics, science, physics,intellectual abilities and humanities.
+                   the addition of communication skills courses taught by distinguished part-time faculty.</p>
+</div>
+</body>
+</html>

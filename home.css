@@ -1,0 +1,148 @@
+.header
+{
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:top center;
+	background-color:#000033;
+	width:100%;
+	height:25%;
+	position:static;
+}
+.fcislogo
+{
+	float:left;
+	margin-left:2%;
+	width:45%;
+	height:100%;
+	
+}
+#logo
+{
+	background-color:#000033;
+	float:right;
+	width:75%;
+	height:100%;
+	
+}
+
+
+.Students
+{
+	
+    font-size:100%;
+	color:white;
+	font-weight: bold;
+    padding-top:3%;
+    padding-right:6%;
+    float:right ;
+	width:16%;
+	height:100%;	
+}
+
+.Staff
+{
+	    padding-right:7%;
+
+	color:white;
+	font-weight: bold;
+	font-size:100%;
+    padding-top:3%;
+    float:right ;
+	width:16%;
+	height:100%;	
+}
+#table1{ 
+    text-align:center;
+	background-color:#4682b4;
+	width:100%;
+	height:5%;
+	border-style:solid;
+	border-width:100%;
+	border-color:#4682b4;
+	font-weight: bold;
+	color:white;
+}
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+ img { 
+                width:100%; 
+vertical-align: middle;
+                display: block; 				} 
+.slideshow{
+  width :95%;
+  position: static;
+  height:auto;
+  display: block;
+  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-style:solid;
+  border-color:#4682b4;
+  border:30px;
+  padding-top:31px;
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000033;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #4682b4;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+#footer
+{
+	width:100%;
+	height:100%;
+	background-position:center bottom;
+	font-size:40%;
+	background-color:#000333;
+	position:fixed;
+	/*background-repeat:no-repeat;
+	background-attachment:scroll;*/
+}
+
+p {
+	
+	background-attachment: scroll;
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.round3 { 
+border: 2px ; border-radius: 12px; 
+}
+.hidden { 
+border-style: hidden;
+border-style: none;
+}
+#par1 a:link {
+	color:#00ff00;
+}
+#par1 a:visited {
+	color:#222222;
+}
+
+#par1 a:active {
+	color:#0000ff;
+}

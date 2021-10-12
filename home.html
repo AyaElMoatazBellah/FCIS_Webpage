@@ -1,0 +1,266 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> FCIS </title>
+<link rel="StyleSheet" type="text/CSS" href="home.css" /> 
+
+</head>
+
+<BODY>
+<div class="header">
+
+   <div class="fcislogo">
+      <img src="logo.PNG"  id="logo" ></img>
+    </div>
+
+   <table class="Students" style="margin-right:10%;" >
+      <tr>   
+	    <td>
+           <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background:#000033; font-size:100%; border-color:#000033;">
+             <option selected disabled>Students</option>
+              <option value="undergraduated.html"> Undergraduate Study </option>
+             <option value="postgraduated.html">Postgraduate Study </option>
+             <option value="international.html">International Students </option>
+        
+            </select>
+		</td>
+      </tr>
+
+      <tr>
+	     <td>
+            <select  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background:#000033; font-size:100%;border-color:#000033;">
+             <option selected disabled>Staff</option>
+             <option value="http://staff.asu.edu.eg/search.php" >Staff Directory</option>
+         
+            </select>
+			</td>
+    </tr>
+    </table>
+ 
+
+<div class="bar">
+        <table id="table1" >
+           <tr style="font-size:100%; text-align:auto;">
+	
+               <td><a href="home.html" style=" text-decoration: none; color:white;"> Home</a> </td>
+  
+               <td>  <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background-color:#4682b4; font-weight: bold; border-color:#4682b4;">
+                   <option selected disabled>About Us</option>
+                   <option value="dean.html"> Dean Word  </option>
+                   <option value="mission.html"> Mission   </option>
+                   <option value="vission.html"> Vission   </option>
+                   <option value="history.html"> History   </option>    </select>
+  
+                </td> 
+  
+                <td> <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" style="color:white; background-color:#4682b4;font-weight: bold; border-color:#4682b4;">
+                    <option selected disabled>Department</option>
+                    <option value="cs.html"> Computer Science Department  </option>
+                    <option value="is.html"> Information System   </option>
+                    <option value="sc.html"> Scientific Computing    </option>
+                    <option value="csy.html"> Computer Systems Department   </option>
+                    <option value="bs.html" > Basic Science Department   </option>   </select>
+                </td>  
+  
+                <td> <a href="result.html" style=" text-decoration: none; color:white;">Result </a></td>
+				
+                <td> <a href="contact.html" style=" text-decoration: none; color:white;">Contact Us </a> </td>
+				
+                <td> <select  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style=";color:white; background-color:#4682b4; font-weight: bold;border-color:#4682b4;">
+                    
+					<option selected disabled >EGY Faculties</option>
+                    <option value="http://www.aun.edu.eg/faculty_computer_information/">Faculty of Computer Science - Assiut University  </option>
+                    <option value="http://www.fayoum.edu.eg/customerror.aspx?aspxerrorpath=/english/ComputersInformation/home.aspx"> Faculty of Computer Science - Fayoum University  </option>
+                    <option value="http://www.fci.bu.edu.eg/fci/en/"> Faculty of Computer Science- Benha University   </option>
+                    <option value="http://www.helwan.edu.eg/fcih/index.php/en/"> Faculty of Computer Science - Helwan University  </option>
+                    <option value="http://csifac.mans.edu.eg/en"> Faculty of Computer Science -Mansoura University </option>
+                    <option value="http://ci.scuegypt.edu.eg/"> Faculty of Computer Science -Suez Canal University  </option>
+                    <option value="http://www.fci.zu.edu.eg/"> Faculty of Computer Science -Zagazig University    </option>
+                    <option value="http://www.minia.edu.eg/FCIEnglish"> Faculty of Computer Science -Minia University   </option>     </select>
+  
+                </td>
+           </tr>
+		</table>
+ </div>
+ </div>
+		  
+		  
+<div id="homepage" style="position:static;">	  
+    <div class="slideshow">
+	
+      <div class="myslides" style="width=100%;">
+       <img src=" p1.JPG" style="width:100%;">
+      </div>
+   
+      <div class="myslides">
+       <img src="p2.JPG " style="width:100%;">
+      </div>
+   
+      <div class="myslides">
+       <img src=" p3.JPG" style="width:100%;">
+      </div>
+   
+      <div class="myslides">
+       <img src=" p4.JPG" style="width:100%;">
+      </div>
+   
+      <div class="myslides">
+       <img src="p5.JPG " style="width:100%;">
+      </div>
+  
+
+
+    </div>
+
+    <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(1)"></span> 
+       <span class="dot" onclick="currentSlide(2)"></span> 
+       <span class="dot" onclick="currentSlide(3)"></span> 
+       <span class="dot" onclick="currentSlide(4)"></span> 
+       <span class="dot" onclick="currentSlide(5)"></span> 
+
+    </div>
+</div>
+
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+ 
+   <table border="0" class="hidden"  cellspacing="15" width="100%"  >
+       <tr > 
+	   
+          <td>
+	         <p style ="color:#4682b4; font-size:40px; font-style:bold;" >News</p>
+	      </td>
+		  
+	      <td >
+	         <p style="color:#4682b4; font-size:40px; font-style:bold;" > Events</p>
+	      </td>
+		  
+          <td>
+             <p style="color:#4682b4; font-size:40px; font-style:bold;">Announcements</p>
+          </td>	
+		  
+	    </tr>    
+        <tr> 
+          <td > 
+            <p>Registration Of Scpecial programs is Open </p>
+             <img src="news.JFIF" width="250“ height="188" " > 
+            <p>Registration Of Scpecial programs is Open<br/>
+
+            <p>  The following online CISCO Courses are offered for </p>
+			   
+			<p>   FREE to our students and graduates </p>
+             <a id="par1" href="https://www.netacad.com/web/self-enroll/course-679607">#FCIS_ASU_CISCO_Academy </a>
+            </p>
+
+             <a id="par1" href=" ">
+
+             <input type="button" value="Details" class="round3" style="background-color:#4682b4;"/>
+             </a>
+			 
+             <ul type="circle" >
+			 
+                 <li>
+                  <u>Master Defense Haiar Sayed Darwish Marse El Sayed </u>
+	             </li>
+				 
+                 <li>
+                  <u>timetable for programs- summer semester 2017-2018</u>
+	             </li>
+                 
+				 <li>
+                  <u>Master Defense Khaled Al Sayed Ali Abdul wahab</u>
+                 </li>
+             </ul>
+			 
+             <a id="par1" href="https://www.facebook.com/groups/253918371877052/?fref=mentions">
+
+			 <input type="button" value=" News Archive" class="round3" style="background-color:#4682b4;"/>
+             </a>
+           </td> 
+       
+	       <td> 
+                <p >Special programs Enrollment 2018-2019 </p>
+             
+			 <img src="evennt.JPG" width="250“ height="188"  />
+
+			 <p>sorry,the entry is available only in Arabic </p>
+
+			 <p>the Orphans day</p>
+
+			 <p>Innovation Management for Startups</p>
+
+			 <a id="par1" href="https://www.facebook.com/tiec.egypt/?ref=gs&fref=gs&dti=252332501959242&hc_location=group">
+                 <input type="button" value="Details" class="round3" style="background-color:#4682b4;" />
+             </a>
+
+			 <ul type="circle"   >
+                <li >
+                 <u  >Network technology program </u>
+	            </li>
+            
+			    <li >
+                 <u>Saftware Engineering program</u>
+	            </li>
+
+				<li >
+                  <u>Google flutter</u>
+	 
+	            </li>
+              </ul>
+			  
+
+			  <a id="par1" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fflutter.io%2F&h=AT0T4j7l3X1UhW-Nu7zuz1to_05uavXAdLZG9-mNFGJaylUEt-cO92n0ORZTW901BJhS_mauJEPmXfJYsABNhRfY5MbElC2Au6NbBZEzkgFFjbj4xtZVs1LEW9rCMIR4nfNEvPagCDG9CoUCJTV4LBsE7M5JMWgRyqWl1-BM">
+			    <input type="button" value="Evants Archive" class="round3"  style="background-color:#4682b4;"/>
+              </a>
+          </td> 
+ 
+        <td >  
+ 
+            <p>A NEW Professional Master Degree in Cloud Computer Network</br>
+               From the Faculty of computers and information </p>
+
+			   <img src="announcment.JFIF" width="250“ height="188" />
+
+			<p> The faculty Of computer and information Presents a new Professional </br>
+                Master Degree in Cloud computer Network- the programs starts in september 2016. </p>
+ 
+                <a id="par1" href="http://www.google.com">
+
+				  <input type="button" value=" More Details" class="round3" style="background-color:#4682b4"; />
+
+				</a>
+        </td> 
+      </tr>
+ 
+      
+ </table> 
+  <div id="footer">
+      <p > FCIS&copy;2017.Ain Shams University</p> 
+  </div>
+
+
+
+</BODY>
+</html>
+</html>

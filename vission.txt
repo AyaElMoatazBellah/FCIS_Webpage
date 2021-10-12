@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>faculty of computer sience</title>
+<link rel="StyleSheet" type="text/CSS" href="department.css" /> 
+<style type="text/css">
+p.navy{
+color:navy;
+text-align:left;
+}
+p.underline{
+color:lightblue;
+text-transform:capitalize;
+text-decoration:underline;
+text-align:center;
+}
+p.normal{
+color:gray;
+font-size:40px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+   <div class="fcislogo">
+      <img src="logo.PNG"  id="logo" ></img>
+    </div>
+
+   <div class="Students" >
+   <pre>
+       <select style="color:white; background:#000033; font-size:100%; border-color:#000033;">
+          <option selected disabled>Students</option>
+		
+          <option > <a id="par1" href="">Undergraduate Study </a></option>
+          <option >Postgraduate Study </a></option>
+          <option >International Students </a></option>
+          <option >Special Programs </a></option>
+        </select>
+    </pre>
+    </div>
+
+    <div class="Staff" >
+    <pre>
+        <select  style="color:white; background:#000033; font-size:100%;border-color:#000033;">
+          <option selected disabled>Staff</option>
+          <option  >Staff Members</option>
+          <option  >Code of Ethics FCI-CU</option>
+          <option >FLDC</option>
+        </select>
+    </pre>
+    </div>
+
+
+<div class="bar">
+        <table id="table1" >
+           <tr style="font-size:100%; text-align:auto;">
+	
+               <td> <a href="home.html" style=" text-decoration: none; color:white;">Home</a> </td>
+  
+               <td>  <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style="color:white; background-color:#4682b4; font-weight: bold; border-color:#4682b4;">
+                   <option selected disabled>About Us</option>
+                   <option value=""> Dean Word  </option>
+                   <option value=""> Mission   </option>
+                   <option value=""> Vission   </option>
+                   <option value=""> History   </option>    </select>
+  
+                </td> 
+  
+                <td> <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" style="color:white; background-color:#4682b4;font-weight: bold; border-color:#4682b4;">
+                    <option selected disabled>Department</option>
+                    <option value="cs.html"> Computer Science Department  </option>
+                    <option value="is.html"> Information System   </option>
+                    <option value="sc.html"> Scientific Computing    </option>
+                    <option value="csy.html"> Computer Systems Department   </option>
+                    <option value="bs.html" > Basic Science Department   </option>   </select>
+                </td>  
+  
+                <td> <a href="result.html" style=" text-decoration: none; color:white;">Result </a></td>
+				
+                <td> <a href="contact.html" style=" text-decoration: none; color:white;">Contact Us </a></td>
+				
+                <td> <select  onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"style=";color:white; background-color:#4682b4; font-weight: bold;border-color:#4682b4;">
+                    
+					<option selected disabled >EGY Faculties</option>
+                    <option value="http://www.aun.edu.eg/faculty_computer_information/">Faculty of Computer Science - Assiut University  </option>
+                    <option value="http://www.fayoum.edu.eg/customerror.aspx?aspxerrorpath=/english/ComputersInformation/home.aspx"> Faculty of Computer Science - Fayoum University  </option>
+                    <option value="http://www.fci.bu.edu.eg/fci/en/"> Faculty of Computer Science- Benha University   </option>
+                    <option value="http://www.helwan.edu.eg/fcih/index.php/en/"> Faculty of Computer Science - Helwan University  </option>
+                    <option value="http://csifac.mans.edu.eg/en"> Faculty of Computer Science -Mansoura University </option>
+                    <option value="http://ci.scuegypt.edu.eg/"> Faculty of Computer Science -Suez Canal University  </option>
+                    <option value="http://www.fci.zu.edu.eg/"> Faculty of Computer Science -Zagazig University    </option>
+                    <option value="http://www.minia.edu.eg/FCIEnglish"> Faculty of Computer Science -Minia University   </option>     </select>
+  
+                </td>
+           </tr>
+		</table>
+ </div>
+ </div>
+ 
+ <div id="is">
+                <p class="normal">Mission</p>
+                <p >Provide the highest level of education in computer science, information systems, scientific calculations, and computer systems for its graduates, and prepare them for the changing needs of the community, and push them to the relevant areas including business administration.</p>
+                <p >Interest and diversity in scientific research work is essential, as well as building a strong cooperation with the industrial and government research.</p>
+                <p>College seeks to provide the best environment to encourage creativity and excellence and moral obligation..</p>
+                <p>College maintains and expands in establishing strong ties with the community, industry, and other colleges debate both locally and internationally.</p>
+ </div>
+</body>
+</html>
